@@ -1,0 +1,29 @@
+   
+     
+    <form  [formGroup]=" registerForm" (ngSubmit)="register()">  
+        <h1>Register</h1>
+        <div class="container">   
+            <label>Firstname : </label>   
+            <input type="text" formControlName="fname" name="fname" required>  
+            <label>Lastname : </label>   
+            <input type="text" formControlName="lname"  name="lname" required>  
+
+            <label>Email</label>   
+            <input type="text"  formControlName="email"  name="email" required>  
+            <label>mobile</label>   
+            <input type="text"  formControlName="mobile"  name="mobile" required>  
+
+            <label>Password</label>   
+            <input type="password" formControlName="pswd"  name="pswd" required>  
+            <label>Confirm Password</label>   
+            <input type="password" formControlName="cpswd"  name="cpswd" required>  
+            
+            <button type="submit" >Register</button> 
+            <a routerLink="">Login</a>
+             
+        </div>   
+    </form>     
+
+
+
+
